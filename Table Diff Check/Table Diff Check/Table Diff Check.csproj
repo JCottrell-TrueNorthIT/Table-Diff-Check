@@ -170,7 +170,9 @@
   <ItemGroup>
     <Compile Include="Column\ColumnMetadataService.cs" />
     <Compile Include="MyPlugin.cs" />
-    <Compile Include="MyPluginControl.cs" />
+    <Compile Include="MyPluginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="MyPluginControl.designer.cs">
       <DependentUpon>MyPluginControl.cs</DependentUpon>
     </Compile>
