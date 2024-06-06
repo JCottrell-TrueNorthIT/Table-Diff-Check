@@ -168,9 +168,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ColumnMetadata.cs" />
     <Compile Include="Column\ColumnMetadataService.cs" />
     <Compile Include="MyPlugin.cs" />
-    <Compile Include="MyPluginControl.cs" />
+    <Compile Include="MyPluginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="MyPluginControl.designer.cs">
       <DependentUpon>MyPluginControl.cs</DependentUpon>
     </Compile>
@@ -180,6 +183,12 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\ColumnMetadata.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyPluginControl.resx">
+      <DependentUpon>MyPluginControl.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
