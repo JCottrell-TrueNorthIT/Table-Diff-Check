@@ -60,4 +60,11 @@ namespace Cross_Environment_Difference_Reviewer
         }
 
     }
+
+    internal class MetadataDifference
+    {
+        Dictionary<string, string> SourceData;
+        Dictionary<string, string> TargetData;
+        Dictionary<string, string> SharedData;
+    }
 }
